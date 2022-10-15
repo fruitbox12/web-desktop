@@ -1,3 +1,11 @@
+window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sw.js');
+  }
+}
 desktopApp = {
 	buttonCount: 1,
 	init: function(){
